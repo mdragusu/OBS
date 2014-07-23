@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE greeter SYSTEM "greeter.dtd">
+<!-- Mira GDM theme by sen -->
+
+<greeter>
+
+    <!-- background -->
+    <item type="rect">
+        <normal color="#262524"/>
+        <pos y="0" x="0" width="100%" height="100%"/>
+    </item>
+	
+	<!-- background image from http://www.mandolux.com and modified by me (don't use it without his permission!)-->
+	<!-- If you want another background image change the bg.png -->
+	<!-- or you could get rid of this and just have a base color (from above) -->
+	<item type="pixmap">
+		<!-- Point this to another file -->
+		<normal file="bg.png"/>
+		<pos x="0" y="0" width="100%" height="100%"/>
+	</item>
+
+    <!-- top panel -->
+    <item type="pixmap">
+        <normal file="top_panel.png"/>
+		<pos x="50%" y="0%" width="532" height="34" anchor="n"/>
+    </item>
+
+    <!-- container for top panel -->
+    <item type="rect">
+      <pos x="50%" y="0%" width="box" height="24" anchor="n"/>
+      <box spacing="5" orientation="horizontal">
+
+	<!-- hostname -->
+        <item type="label">
+          <pos x="50%" y="50%" anchor="c"/>
+          <normal font="Snap 6" color="#a4a4a4"/>
+          <text>%h  ◀ ▶ </text>
+	</item>
+
+    	<!-- clock -->
+        <item type="label" id="clock">
+          <pos x="50%" y="50%" anchor="c"/>
+          <normal font="Snap 6" color="#a4a4a4"/>
+          <text>%c  ◀ ▶ </text>
+	</item>
+
+    	<!-- language button -->
+	<item type="rect" id="language_button" button="true">
+	<pos anchor="c" x="50%" y="50%" width="24" height="24"/>
+		<box>
+			<!-- button image -->
+			<item type="pixmap">
+			<normal file="lang.png"/>
+			<prelight file="lang_pre.png"/>
+			<pos x="50%" y="50%" anchor="c"/>
+		</item>
+		</box>
+	</item>
+
+    	<!-- session button -->
+	<item type="rect" id="session_button" button="true">
+	<pos anchor="c" x="50%" y="50%" width="24" height="24"/>
+		<box>
+			<!-- button image -->
+			<item type="pixmap">
+			<normal file="session.png"/>
+			<prelight file="session_pre.png"/>
+			<pos x="50%" y="50%" anchor="c"/>
+		</item>
+		</box>
+	</item>
+
+    	<!-- separator -->
+        <item type="label">
+          <pos x="50%" y="50%" anchor="c"/>
+          <normal font="Snap 6" color="#a4a4a4"/>
+          <text> ◀ ▶ </text>
+	</item>
+
+    	<!-- suspend button -->
+	<item type="rect" id="suspend_button" button="true">
+	<pos anchor="c" x="50%" y="50%" width="24" height="24"/>
+		<box>
+			<!-- button image -->
+			<item type="pixmap">
+			<normal file="suspend.png"/>
+			<prelight file="suspend_pre.png"/>
+			<pos x="50%" y="50%" anchor="c"/>
+		</item>
+		</box>
+	</item>
+
+    	<!-- restart button -->
+	<item type="rect" id="reboot_button" button="true">
+	<pos anchor="c" x="50%" y="50%" width="24" height="24"/>
+		<box>
+			<!-- button image -->
+			<item type="pixmap">
+			<normal file="reboot.png"/>
+			<prelight file="reboot_pre.png"/>
+			<pos x="50%" y="50%" anchor="c"/>
+		</item>
+		</box>
+	</item>
+
+    	<!-- shutdown button -->
+	<item type="rect" id="halt_button" button="true">
+	<pos anchor="c" x="50%" y="50%" width="24" height="24"/>
+		<box>
+			<!-- button image -->
+			<item type="pixmap">
+			<normal file="shutdown.png"/>
+			<prelight file="shutdown_pre.png"/>
+			<pos x="50%" y="50%" anchor="c"/>
+		</item>
+		</box>
+	</item>
+	
+      </box>
+    </item>
+
+
+
+    <!-- login box in the center-->
+    <item type="pixmap">
+        <normal file="login_box.png"/>
+		<pos x="50%" y="50%" width="300" height="80" anchor="c"/>
+    </item>
+
+    <!-- container for labels -->
+    <item type="rect">
+        <pos x="50%" y="50%" width="300" height="80" anchor="c"/>
+        <box orientation="vertical">
+
+	    <!-- welcome-label -->
+	    <item type="label">
+		<pos x="150" y="25" anchor="c"/>
+		<normal font="Snap 6" color="#a4a4a4"/>
+		<stock type="welcome-label"/>
+	    </item>
+
+    <item type="rect">
+        <pos x="160" y="31" width="280" height="60" anchor="n"/>
+	<box orientation="horizontal">	
+
+	    <!-- username label -->
+            <item type="label" id="pam-prompt">
+		<pos x="0" y="5" />
+                <normal font="Snap 6" color="#d0d0d0"/>
+                <stock type="username-label"/>
+            </item>
+
+            <!-- user-pw-entry -->
+            <item type="entry" id="user-pw-entry">
+                <pos x="5" y="0" width="194" height="20"/>
+                <normal font="Snap 6" color="#556B2F"/>
+            </item>
+
+                </box>
+            </item>
+        </box>
+    </item>
+
+    <!-- login box overlay-->
+    <item type="pixmap">
+        <normal file="login_box_overlay.png"/>
+		<pos x="50%" y="50%" width="300" height="80" anchor="c"/>
+    </item>
+
+    <!-- caps-lock-warning -->
+    <item type="rect" id="caps-lock-warning">
+	<normal color="#101010" alpha="0.5"/>
+	<pos x="0" y="100%" width="100%" height="box" anchor="sw"/>
+	<box orientation="vertical" min-width="250" xpadding="10" ypadding="5" spacing="0">
+		<item type="label">
+			<normal color="#ffffff" font="Snap 6"/>
+			<pos x="50%" y="50%" anchor="c"/>
+			<stock type="caps-lock-warning"/>
+		</item>
+	</box>
+    </item>
+
+    <!-- pam-error (login failure etc.) -->
+    <item type="rect" id="pam-error">
+	<pos x="0" y="100%" width="100%" height="box" anchor="sw"/>
+	<box orientation="vertical" min-width="250" xpadding="10" ypadding="5" spacing="0">
+		<item type="label" id="pam-error">
+			<normal color="#ff0000" font="Snap 6"/>
+			<pos x="50%" y="50%" anchor="c"/>
+			<text/>
+		</item>
+	</box>
+    </item>
+
+</greeter>

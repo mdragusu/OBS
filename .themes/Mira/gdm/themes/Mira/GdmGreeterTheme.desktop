@@ -1,0 +1,7 @@
+[GdmGreeterTheme]
+Greeter=Mira.xml
+Name=Mira
+Description=Mira GDM theme, background from http://www.mandolux.com (modified by me)
+Author=sen <sen@archlinux.us>
+Copyright=(c) 2008
+Screenshot=screenshot.jpg

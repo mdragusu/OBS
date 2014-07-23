@@ -1,0 +1,16 @@
+<skin name="Mira" width="320" height="80">
+
+  <image src="bg.png" x="0" y="0" width="320" height="80"/> 
+
+  <image src="cd-bg.png" x="248" y="14" width="57" height="52"/> 
+  <albumcover x="255" y="15" width="50" height="50"/>
+  <image src="cd-overlay.png" x="248" y="14" width="57" height="52"/> 
+
+  <titlename x="15" y="14" width="230" maxchars="32" font="Snap Bold 7" color="#a4a4a4FF"/>   
+  <artistname x="15" y="40" width="230" maxchars="32" font="Snap 7" color="#a4a4a4FF"/>
+  <albumname x="15" y="55" width="228" maxchars="32" font="Snap 7" color="#a4a4a4FF"/>
+
+  <image src="overlay.png" x="0" y="0" width="320" height="80"/> 
+
+</skin>
+

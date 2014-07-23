@@ -1,0 +1,8 @@
+<skin name="Mira-Cover" width="57" height="52">
+
+  <image src="cd-bg.png" x="0" y="0" width="57" height="52"/> 
+  <albumcover x="6" y="1" width="50" height="50"/>
+  <image src="cd-overlay.png" x="0" y="0" width="57" height="52"/> 
+
+</skin>
+
