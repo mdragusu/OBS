@@ -8,8 +8,8 @@ sudo apt-get install lightdm \
                      xfce4-panel \
                      conky \
                      pavucontrol \
-                     xfce4-terminal
-
+                     xfce4-terminal \
+                     gmrun \
 cp -R ./config ~/
 cp -R ./themes ~/
 cp -R ./icons ~/
