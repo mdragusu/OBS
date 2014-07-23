@@ -1,4 +1,4 @@
-sudo apt-get install \
+apt-get install \
 lightdm \
 openbox \
 lxappearance \
@@ -12,7 +12,8 @@ pavucontrol \
 xfce4-terminal \
 gmrun \
 nemo \
-htop
+htop \
+elementary-icon-theme \
 
 echo "user-session=openbox" >> /usr/share/lightdm/lightdm.conf.d/50-unity-greeter.conf
 gsettings set org.nemo.desktop show-desktop-icons false
