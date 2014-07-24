@@ -6,6 +6,7 @@ lxrandr \
 obconf \
 feh \
 xfce4-panel \
+xfce4-mixer \
 conky \
 pavucontrol \
 xfce4-terminal \
