@@ -36,11 +36,11 @@ override_utf8_locale yes
 
 #to prevent window from moving
 use_spacer none
-minimum_size 350 0
+minimum_size 100 0
 
 #mpd
 #mpd_host localhost
 #mpd_port 6600
 
 TEXT
-|  Cpu: ${color 8FEA26}${cpu}%${color}  Ram: ${color 8FEA26}${memperc}%${color}  ${if_existing /proc/net/route wlan0}Signal: ${color 8FEA26}${wireless_link_qual wlan0}%${color} ${if_existing /proc/net/route eth0}Up: ${color 8FEA26}${upspeed eth0} kb/s${color}  Down: ${color 8FEA26}${downspeed eth0} kb/s${color}${endif}${else}Network Unavailable${endif}${alignc} |
+ Cpu: ${color 8FEA26}${cpu}%${color}  Ram: ${color 8FEA26}${memperc}%${color} Core:${color 8FEA26} ${execi 8 sensors | grep -A 1 'temp1' | cut -c16-17 | sed '/^$/d'}°C  ${color}GPU: ${color 8FEA26} ${execi 8 nvidia-settings -query GPUCoreTemp | grep $HOSTNAME | head -1 | cut -c50-51}°C

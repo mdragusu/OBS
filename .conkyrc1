@@ -43,4 +43,4 @@ mpd_host localhost
 mpd_port 6600
 
 TEXT
- $mpd_artist -  $mpd_title$font $mpd_elapsed/$mpd_length 
+Vol ${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6}  $mpd_artist -  $mpd_title$font ($mpd_elapsed/$mpd_length) 
