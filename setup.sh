@@ -11,6 +11,7 @@ pavucontrol \
 gmrun \
 nemo \
 htop \
+light-locker \
 xfce4-mixer \
 conky \
 elementary-icon-theme \
