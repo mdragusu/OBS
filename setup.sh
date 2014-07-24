@@ -5,7 +5,6 @@ lxappearance \
 lxrandr \
 obconf \
 feh \
-cmus \
 xfce4-panel \
 conky \
 pavucontrol \
