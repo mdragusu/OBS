@@ -203,6 +203,11 @@
         <command>amixer -c 0 set Master 1%+</command>
       </action>
     </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>amixer -D pulse set Master toggleamixer -D pulse set Master toggle</command>
+      </action>
+    </keybind>
     <keybind key="A-F1">
       <action name="Execute">
         <command>xfce4-terminal --geometry 90x50</command>
