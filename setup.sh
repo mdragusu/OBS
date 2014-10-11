@@ -6,6 +6,7 @@ lxrandr \
 obconf \
 feh \
 xfce4-panel \
+tint2 \
 xfce4-terminal \
 xfce4-indicator-plugin \
 xfce4-whiskermenu-plugin \
