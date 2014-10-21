@@ -1,46 +1,59 @@
-#avoid flicker
-double_buffer yes
-
-#own window to run simultanious 2 or more conkys
-own_window  yes
-own_window_transparent no
-own_window_type override
-own_window_hints undecorated,sticky,skip_taskbar,skip_pager,below
-
-#borders
-draw_borders no
-border_margin 3
-
-#shades
-draw_shades no
-
-#position
-gap_x 200
-gap_y 0
-alignment top_right
-
-#behaviour
+######################
+# - Conky settings - #
+######################
 update_interval 1
+total_run_times 0
+net_avg_samples 1
+cpu_avg_samples 1
 
-#colour
-default_color  8f8f8f
-#default_shade_color 000000
-own_window_colour 262729
+imlib_cache_size 0
+double_buffer yes
+no_buffers yes
 
-#font
+#####################
+# - Text settings - #
+#####################
 use_xft yes
-xftfont DroidSansMono:Bold:size=6
-
-# Force UTF8? note that UTF8 support required XFT
+xftfont Droid Sans:size=5
 override_utf8_locale yes
+text_buffer_size 2048
+
+#############################
+# - Window specifications - #
+#############################
+own_window_type desktop
+own_class Conky
+own_window yes
+own_window_transparent yes
+own_window_hints above,undecorated,sticky,skip_taskbar,skip_pager
+#own_window_colour 111111
+
 
 #to prevent window from moving
-use_spacer none
-minimum_size 100 0
 
-#mpd
-#mpd_host localhost
-#mpd_port 6600
+
+#alignment bottom_left
+#alignment top_left
+alignment top_right
+gap_x  5  
+gap_y  0  
+minimum_size 1920 1
+maximum_width 1920
+
+#########################
+# - Graphics settings - #
+#########################
+draw_shades no
+draw_graph_borders no
+draw_execbar_borders no
+
+default_color 777777 #212526
+
+color0  8f8f8f #1E1C1A 
+color1  ffffff #1E1C1A
+color2  8FEA26 #FFFFFF #1E1C1A
+color3  8f8f8f #ffffff   #239cd5   #2597cd
+
 
 TEXT
- Cpu: ${color 8FEA26}${cpu}%${color}  Ram: ${color 8FEA26}${memperc}%${color} Core:${color 8FEA26} ${execi 8 sensors | grep -A 1 'temp1' | cut -c16-17 | sed '/^$/d'}°C  ${color}GPU: ${color 8FEA26} ${execi 8 nvidia-settings -query GPUCoreTemp | grep $HOSTNAME | head -1 | cut -c50-51}°C
+${voffset 0}   ${color3}${font Terminus :size=8}Home: ${color2}${font Terminus :size=8}${fs_free /home}/${font Terminus :size=8}${fs_size /home} - ${fs_free_perc /}% ${color3} free | ${color3}${font Terminus :size=8}Cpu: ${color2}${font Terminus :size=8}${cpu cpu1}% ${cpugraph cpu1 10,50 777777 777777} ${color3} | ${color3}${font Terminus :size=8}Mem: ${color2}${font Terminus :size=8}${memperc}% ${memgraph mem 10,50 777777 777777} ${color3} |  Up: ${color2}${font Terminus :size=8}${upspeed em1}/s ${upspeedgraph em1 10,50 777777 777777} ${color3} | Down: ${color2}${font Terminus :size=8}${downspeed em1}/s ${downspeedgraph em1 10,50 777777 777777} |  ${color3}${font Terminus :size=8} ${alignr}  Now Playing : ${color2}${font Terminus :size=8}${exec rhythmbox-client --print-playing } ${color3}  ${color2}${font Terminus :size=8} ${exec rhythmbox-client --print-playing-format %te}/${exec rhythmbox-client rhythmbox-client --print-playing-format %td } ${color3} | ${alignr} ${font Terminus :size=8} ${color3} Date:${color2} ${time %d} ${time %B} ${time %Y}, ${time %A} ${color3} || ${font Terminus :size=8} ${color2}${time %H}:${time %M} ${color3}
