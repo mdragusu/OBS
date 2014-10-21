@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Automatically generated file. Do not edit (see /usr/share/doc/menu/html) -->
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id='/Debian' label='Debian'>
+  <menu id='/Debian/Applications' label='Applications'>
+    <menu id='/Debian/Applications/Accessibility' label='Accessibility'>
+      <item label='Xmag'>
+        <action name='Execute'><execute>xmag</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applications/Data Management' label='Data Management'>
+      <item label='LibreOffice Base' icon='/usr/share/icons/hicolor/32x32/apps/libreoffice-base.xpm'>
+        <action name='Execute'><execute>/usr/bin/libreoffice --base</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applications/Editors' label='Editors'>
+      <item label='Nano' icon='/usr/share/nano/nano-menu.xpm'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Nano&quot; -e sh -c &quot;/bin/nano&quot;</execute></action>
+      </item>
+      <item label='Xedit'>
+        <action name='Execute'><execute>xedit</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applications/Emulators' label='Emulators'>
+      <item label='VirtualBox' icon='/usr/share/pixmaps/virtualbox.xpm'>
+        <action name='Execute'><execute>/usr/bin/virtualbox</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applications/File Management' label='File Management'>
+      <item label='File-Roller' icon='/usr/share/pixmaps/file-roller.xpm'>
+        <action name='Execute'><execute>/usr/bin/file-roller</execute></action>
+      </item>
+      <item label='gmrun'>
+        <action name='Execute'><execute>/usr/bin/gmrun</execute></action>
+      </item>
+      <item label='mc' icon='/usr/share/pixmaps/mc.xpm'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;mc&quot; -e sh -c &quot;/usr/bin/mc&quot;</execute></action>
+      </item>
+      <item label='PCManFM'>
+        <action name='Execute'><execute>/usr/bin/pcmanfm</execute></action>
+      </item>
+      <item label='Xfdesktop'>
+        <action name='Execute'><execute>xfdesktop</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applications/Graphics' label='Graphics'>
+      <item label='ImageMagick' icon='/usr/share/pixmaps/display.im6.xpm'>
+        <action name='Execute'><execute>/usr/bin/display.im6 logo:</execute></action>
+      </item>
+      <item label='LibreOffice Draw' icon='/usr/share/icons/hicolor/32x32/apps/libreoffice-draw.xpm'>
+        <action name='Execute'><execute>/usr/bin/libreoffice --draw</execute></action>
+      </item>
+      <item label='X Window Snapshot'>
+        <action name='Execute'><execute>xwd | xwud</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applications/Network' label='Network'>
+      <menu id='/Debian/Applications/Network/Communication' label='Communication'>
+        <item label='Minicom'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Minicom&quot; -e sh -c &quot;/usr/bin/minicom&quot;</execute></action>
+        </item>
+        <item label='Minicom (X11)'>
+          <action name='Execute'><execute>/usr/bin/xminicom</execute></action>
+        </item>
+        <item label='Telnet'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Telnet&quot; -e sh -c &quot;/usr/bin/telnet&quot;</execute></action>
+        </item>
+        <item label='Xbiff'>
+          <action name='Execute'><execute>xbiff</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applications/Network/File Transfer' label='File Transfer'>
+        <item label='Transmission BitTorrent Client (GTK)' icon='/usr/share/pixmaps/transmission.xpm'>
+          <action name='Execute'><execute>/usr/bin/transmission-gtk</execute></action>
+        </item>
+      </menu>
+    </menu>
+    <menu id='/Debian/Applications/Office' label='Office'>
+      <item label='LibreOffice Calc' icon='/usr/share/icons/hicolor/32x32/apps/libreoffice-calc.xpm'>
+        <action name='Execute'><execute>/usr/bin/libreoffice --calc</execute></action>
+      </item>
+      <item label='LibreOffice Impress' icon='/usr/share/icons/hicolor/32x32/apps/libreoffice-impress.xpm'>
+        <action name='Execute'><execute>/usr/bin/libreoffice --impress</execute></action>
+      </item>
+      <item label='LibreOffice Writer' icon='/usr/share/icons/hicolor/32x32/apps/libreoffice-writer.xpm'>
+        <action name='Execute'><execute>/usr/bin/libreoffice --writer</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applications/Programming' label='Programming'>
+      <item label='GDB'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;GDB&quot; -e sh -c &quot;/usr/bin/gdb&quot;</execute></action>
+      </item>
+      <item label='Geany' icon='/usr/share/pixmaps/geany.xpm'>
+        <action name='Execute'><execute>/usr/bin/geany</execute></action>
+      </item>
+      <item label='Meld'>
+        <action name='Execute'><execute>/usr/bin/meld</execute></action>
+      </item>
+      <item label='Python (v2.7)' icon='/usr/share/pixmaps/python2.7.xpm'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Python (v2.7)&quot; -e sh -c &quot;/usr/bin/python2.7&quot;</execute></action>
+      </item>
+      <item label='Python (v3.4)' icon='/usr/share/pixmaps/python3.4.xpm'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Python (v3.4)&quot; -e sh -c &quot;/usr/bin/python3.4&quot;</execute></action>
+      </item>
+      <item label='RapidSVN' icon='/usr/share/pixmaps/rapidsvn.xpm'>
+        <action name='Execute'><execute>/usr/bin/rapidsvn</execute></action>
+      </item>
+      <item label='Tclsh8.6'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Tclsh8.6&quot; -e sh -c &quot;/usr/bin/tclsh8.6&quot;</execute></action>
+      </item>
+      <item label='TkWish8.6'>
+        <action name='Execute'><execute>x-terminal-emulator -e /usr/bin/wish8.6</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applications/Science' label='Science'>
+      <menu id='/Debian/Applications/Science/Mathematics' label='Mathematics'>
+        <item label='Bc'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Bc&quot; -e sh -c &quot;/usr/bin/bc&quot;</execute></action>
+        </item>
+        <item label='LibreOffice Math' icon='/usr/share/icons/hicolor/32x32/apps/libreoffice-math.xpm'>
+          <action name='Execute'><execute>/usr/bin/libreoffice --math</execute></action>
+        </item>
+        <item label='Xcalc'>
+          <action name='Execute'><execute>xcalc</execute></action>
+        </item>
+      </menu>
+    </menu>
+    <menu id='/Debian/Applications/Shells' label='Shells'>
+      <item label='Bash'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Bash&quot; -e sh -c &quot;/bin/bash --login&quot;</execute></action>
+      </item>
+      <item label='Dash'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Dash&quot; -e sh -c &quot;/bin/dash -i&quot;</execute></action>
+      </item>
+      <item label='Sh'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;Sh&quot; -e sh -c &quot;/bin/sh --login&quot;</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applications/Sound' label='Sound'>
+      <item label='Audacious' icon='/usr/share/pixmaps/audacious-32.xpm'>
+        <action name='Execute'><execute>/usr/bin/audacious</execute></action>
+      </item>
+      <item label='ncmpc'>
+        <action name='Execute'><execute>x-terminal-emulator  -T &quot;ncmpc&quot; -e sh -c &quot;/usr/bin/ncmpc&quot;</execute></action>
+      </item>
+      <item label='pavucontrol'>
+        <action name='Execute'><execute>/usr/bin/pavucontrol</execute></action>
+      </item>
+      <item label='Rhythmbox' icon='/usr/share/pixmaps/rhythmbox-small.xpm'>
+        <action name='Execute'><execute>/usr/bin/rhythmbox</execute></action>
+      </item>
+      <item label='Xfce Mixer' icon='/usr/share/pixmaps/xfce4-mixer.xpm'>
+        <action name='Execute'><execute>/usr/bin/xfce4-mixer</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applications/System' label='System'>
+      <menu id='/Debian/Applications/System/Administration' label='Administration'>
+        <item label='Debian Task selector'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Debian Task selector&quot; -e sh -c &quot;su-to-root -c tasksel&quot;</execute></action>
+        </item>
+        <item label='DSL/PPPoE configuration tool' icon='/usr/share/pixmaps/pppoeconf.xpm'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;DSL/PPPoE configuration tool&quot; -e sh -c &quot;/usr/sbin/pppoeconf&quot;</execute></action>
+        </item>
+        <item label='Editres'>
+          <action name='Execute'><execute>editres</execute></action>
+        </item>
+        <item label='GNOME partition editor' icon='/usr/share/pixmaps/gparted.xpm'>
+          <action name='Execute'><execute>su-to-root -X -c /usr/sbin/gparted</execute></action>
+        </item>
+        <item label='LXAppearance'>
+          <action name='Execute'><execute>/usr/bin/lxappearance</execute></action>
+        </item>
+        <item label='Openbox Configuration Manager' icon='/usr/share/pixmaps/obconf.xpm'>
+          <action name='Execute'><execute>/usr/bin/obconf</execute></action>
+        </item>
+        <item label='pppconfig'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;pppconfig&quot; -e sh -c &quot;su-to-root -p root -c /usr/sbin/pppconfig&quot;</execute></action>
+        </item>
+        <item label='QtConfig'>
+          <action name='Execute'><execute>/usr/lib/*/qt4/bin/qtconfig</execute></action>
+        </item>
+        <item label='Xclipboard'>
+          <action name='Execute'><execute>xclipboard</execute></action>
+        </item>
+        <item label='Xfontsel'>
+          <action name='Execute'><execute>xfontsel</execute></action>
+        </item>
+        <item label='Xkill'>
+          <action name='Execute'><execute>xkill</execute></action>
+        </item>
+        <item label='Xrefresh'>
+          <action name='Execute'><execute>xrefresh</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applications/System/Hardware' label='Hardware'>
+        <item label='LXRandR'>
+          <action name='Execute'><execute>/usr/bin/lxrandr</execute></action>
+        </item>
+        <item label='Xvidtune'>
+          <action name='Execute'><execute>xvidtune</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applications/System/Language Environment' label='Language Environment'>
+        <item label='Input Method Configuration'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Input Method Configuration&quot; -e sh -c &quot;/usr/bin/im-config&quot;</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applications/System/Monitoring' label='Monitoring'>
+        <item label='Conky'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Conky&quot; -e sh -c &quot;/usr/bin/conky&quot;</execute></action>
+        </item>
+        <item label='GNOME system monitor'>
+          <action name='Execute'><execute>/usr/bin/gnome-system-monitor</execute></action>
+        </item>
+        <item label='htop'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;htop&quot; -e sh -c &quot;/usr/bin/htop&quot;</execute></action>
+        </item>
+        <item label='Pstree' icon='/usr/share/pixmaps/pstree16.xpm'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Pstree&quot; -e sh -c &quot;/usr/bin/pstree.x11&quot;</execute></action>
+        </item>
+        <item label='Top'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Top&quot; -e sh -c &quot;/usr/bin/top&quot;</execute></action>
+        </item>
+        <item label='Xconsole'>
+          <action name='Execute'><execute>xconsole -file /dev/xconsole</execute></action>
+        </item>
+        <item label='Xev'>
+          <action name='Execute'><execute>x-terminal-emulator -e xev</execute></action>
+        </item>
+        <item label='Xload'>
+          <action name='Execute'><execute>xload</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applications/System/Package Management' label='Package Management'>
+        <item label='Aptitude Package Manager (text)'>
+          <action name='Execute'><execute>x-terminal-emulator  -T &quot;Aptitude Package Manager (text)&quot; -e sh -c &quot;/usr/bin/aptitude-curses&quot;</execute></action>
+        </item>
+      </menu>
+      <menu id='/Debian/Applications/System/Security' label='Security'>
+        <item label='light-locker-settings'>
+          <action name='Execute'><execute>light-locker-settings</execute></action>
+        </item>
+      </menu>
+    </menu>
+    <menu id='/Debian/Applications/Terminal Emulators' label='Terminal Emulators'>
+      <item label='Xfce Terminal' icon='/usr/share/pixmaps/xfce4-terminal.xpm'>
+        <action name='Execute'><execute>/usr/bin/xfce4-terminal</execute></action>
+      </item>
+      <item label='XTerm' icon='/usr/share/pixmaps/xterm-color_32x32.xpm'>
+        <action name='Execute'><execute>xterm</execute></action>
+      </item>
+      <item label='X-Terminal as root (GKsu)' icon='/usr/share/pixmaps/gksu-debian.xpm'>
+        <action name='Execute'><execute>/usr/bin/gksu -u root /usr/bin/x-terminal-emulator</execute></action>
+      </item>
+      <item label='XTerm (Unicode)' icon='/usr/share/pixmaps/xterm-color_32x32.xpm'>
+        <action name='Execute'><execute>uxterm</execute></action>
+      </item>
+    </menu>
+    <menu id='/Debian/Applications/Viewers' label='Viewers'>
+      <item label='Evince' icon='/usr/share/pixmaps/evince.xpm'>
+        <action name='Execute'><execute>/usr/bin/evince</execute></action>
+      </item>
+      <item label='Eye of GNOME' icon='/usr/share/pixmaps/gnome-eog.xpm'>
+        <action name='Execute'><execute>/usr/bin/eog</execute></action>
+      </item>
+      <item label='Xditview'>
+        <action name='Execute'><execute>xditview</execute></action>
+      </item>
+    </menu>
+  </menu>
+  <menu id='/Debian/Games' label='Games'>
+    <menu id='/Debian/Games/Toys' label='Toys'>
+      <item label='Oclock'>
+        <action name='Execute'><execute>oclock</execute></action>
+      </item>
+      <item label='Xclock (analog)'>
+        <action name='Execute'><execute>xclock -analog</execute></action>
+      </item>
+      <item label='Xclock (digital)'>
+        <action name='Execute'><execute>xclock -digital -update 1</execute></action>
+      </item>
+      <item label='Xeyes'>
+        <action name='Execute'><execute>xeyes</execute></action>
+      </item>
+      <item label='Xlogo'>
+        <action name='Execute'><execute>xlogo</execute></action>
+      </item>
+    </menu>
+  </menu>
+  <menu id='/Debian/Help' label='Help'>
+    <item label='Info'>
+      <action name='Execute'><execute>x-terminal-emulator  -T &quot;Info&quot; -e sh -c &quot;info&quot;</execute></action>
+    </item>
+    <item label='Xman'>
+      <action name='Execute'><execute>xman</execute></action>
+    </item>
+    <item label='yelp'>
+      <action name='Execute'><execute>/usr/bin/yelp</execute></action>
+    </item>
+  </menu>
+  <menu id='/Debian/Window Managers' label='Window Managers'>
+    <item label='Openbox' icon='/usr/share/pixmaps/openbox.xpm'>
+      <action name='Restart'><execute>/usr/bin/openbox</execute></action>
+    </item>
+    <item label='XFwm'>
+      <action name='Restart'><execute>xfwm4</execute></action>
+    </item>
+  </menu>
+  <menu id='/Debian/Windows Applications' label='Windows Applications'>
+    <menu id='/Debian/Windows Applications/Microsoft Office' label='Microsoft Office'>
+      <item label='Microsoft Office Access 2007' icon='/home/mdragusu/.cxoffice/Microsoft Word 2007/windata/cxmenu/icons/hicolor/32x32/apps/36C3_accicons.0.png'>
+        <action name='Execute'><execute>&quot;/home/mdragusu/.cxoffice/Microsoft Word 2007/desktopdata/cxmenu/StartMenu.C^5E3A^5Fusers^5Fcrossover^5FStart^2BMenu/Programs/Microsoft+Office/Microsoft+Office+Access+2007.lnk&quot;</execute></action>
+      </item>
+      <item label='Microsoft Office Excel 2007' icon='/home/mdragusu/.cxoffice/Microsoft Word 2007/windata/cxmenu/icons/hicolor/32x32/apps/4012_xlicons.0.png'>
+        <action name='Execute'><execute>&quot;/home/mdragusu/.cxoffice/Microsoft Word 2007/desktopdata/cxmenu/StartMenu.C^5E3A^5Fusers^5Fcrossover^5FStart^2BMenu/Programs/Microsoft+Office/Microsoft+Office+Excel+2007.lnk&quot;</execute></action>
+      </item>
+      <item label='Microsoft Office Groove 2007' icon='/home/mdragusu/.cxoffice/Microsoft Word 2007/windata/cxmenu/icons/hicolor/32x32/apps/14EB_GrooveIcon.0.png'>
+        <action name='Execute'><execute>&quot;/home/mdragusu/.cxoffice/Microsoft Word 2007/desktopdata/cxmenu/StartMenu.C^5E3A^5Fusers^5Fcrossover^5FStart^2BMenu/Programs/Microsoft+Office/Microsoft+Office+Groove+2007.lnk&quot;</execute></action>
+      </item>
+      <item label='Microsoft Office InfoPath 2007' icon='/home/mdragusu/.cxoffice/Microsoft Word 2007/windata/cxmenu/icons/hicolor/32x32/apps/EA03_inficon.0.png'>
+        <action name='Execute'><execute>&quot;/home/mdragusu/.cxoffice/Microsoft Word 2007/desktopdata/cxmenu/StartMenu.C^5E3A^5Fusers^5Fcrossover^5FStart^2BMenu/Programs/Microsoft+Office/Microsoft+Office+InfoPath+2007.lnk&quot;</execute></action>
+      </item>
+      <item label='Microsoft Office OneNote 2007' icon='/home/mdragusu/.cxoffice/Microsoft Word 2007/windata/cxmenu/icons/hicolor/32x32/apps/CB89_joticon.0.png'>
+        <action name='Execute'><execute>&quot;/home/mdragusu/.cxoffice/Microsoft Word 2007/desktopdata/cxmenu/StartMenu.C^5E3A^5Fusers^5Fcrossover^5FStart^2BMenu/Programs/Microsoft+Office/Microsoft+Office+OneNote+2007.lnk&quot;</execute></action>
+      </item>
+      <item label='Microsoft Office Outlook 2007' icon='/home/mdragusu/.cxoffice/Microsoft Word 2007/windata/cxmenu/icons/hicolor/32x32/apps/B2B9_outicon.0.png'>
+        <action name='Execute'><execute>&quot;/home/mdragusu/.cxoffice/Microsoft Word 2007/desktopdata/cxmenu/StartMenu.C^5E3A^5Fusers^5Fcrossover^5FStart^2BMenu/Programs/Microsoft+Office/Microsoft+Office+Outlook+2007.lnk&quot;</execute></action>
+      </item>
+      <item label='Microsoft Office PowerPoint 2007' icon='/home/mdragusu/.cxoffice/Microsoft Word 2007/windata/cxmenu/icons/hicolor/32x32/apps/027E_pptico.0.png'>
+        <action name='Execute'><execute>&quot;/home/mdragusu/.cxoffice/Microsoft Word 2007/desktopdata/cxmenu/StartMenu.C^5E3A^5Fusers^5Fcrossover^5FStart^2BMenu/Programs/Microsoft+Office/Microsoft+Office+PowerPoint+2007.lnk&quot;</execute></action>
+      </item>
+      <item label='Microsoft Office Publisher 2007' icon='/home/mdragusu/.cxoffice/Microsoft Word 2007/windata/cxmenu/icons/hicolor/32x32/apps/D829_pubs.0.png'>
+        <action name='Execute'><execute>&quot;/home/mdragusu/.cxoffice/Microsoft Word 2007/desktopdata/cxmenu/StartMenu.C^5E3A^5Fusers^5Fcrossover^5FStart^2BMenu/Programs/Microsoft+Office/Microsoft+Office+Publisher+2007.lnk&quot;</execute></action>
+      </item>
+      <menu id='/Debian/Windows Applications/Microsoft Office/Microsoft Office Tools' label='Microsoft Office Tools'>
+        <item label='Digital Certificate for VBA Projects' icon='/home/mdragusu/.cxoffice/Microsoft Word 2007/windata/cxmenu/icons/hicolor/32x32/apps/0EF6_misc.15.png'>
+          <action name='Execute'><execute>&quot;/home/mdragusu/.cxoffice/Microsoft Word 2007/desktopdata/cxmenu/StartMenu.C^5E3A^5Fusers^5Fcrossover^5FStart^2BMenu/Programs/Microsoft+Office/Microsoft+Office+Tools/Digital+Certificate+for+VBA+Projects.lnk&quot;</execute></action>
+        </item>
+        <item label='Microsoft Clip Organizer' icon='/home/mdragusu/.cxoffice/Microsoft Word 2007/windata/cxmenu/icons/hicolor/32x32/apps/921F_cagicon.0.png'>
+          <action name='Execute'><execute>&quot;/home/mdragusu/.cxoffice/Microsoft Word 2007/desktopdata/cxmenu/StartMenu.C^5E3A^5Fusers^5Fcrossover^5FStart^2BMenu/Programs/Microsoft+Office/Microsoft+Office+Tools/Microsoft+Clip+Organizer.lnk&quot;</execute></action>
+        </item>
+        <item label='Microsoft Office 2007 Language Settings' icon='/home/mdragusu/.cxoffice/Microsoft Word 2007/windata/cxmenu/icons/hicolor/32x32/apps/0EF6_misc.5.png'>
+          <action name='Execute'><execute>&quot;/home/mdragusu/.cxoffice/Microsoft Word 2007/desktopdata/cxmenu/StartMenu.C^5E3A^5Fusers^5Fcrossover^5FStart^2BMenu/Programs/Microsoft+Office/Microsoft+Office+Tools/Microsoft+Office+2007+Language+Settings.lnk&quot;</execute></action>
+        </item>
+        <item label='Microsoft Office Diagnostics' icon='/home/mdragusu/.cxoffice/Microsoft Word 2007/windata/cxmenu/icons/hicolor/32x32/apps/0EF6_misc.17.png'>
+          <action name='Execute'><execute>&quot;/home/mdragusu/.cxoffice/Microsoft Word 2007/desktopdata/cxmenu/StartMenu.C^5E3A^5Fusers^5Fcrossover^5FStart^2BMenu/Programs/Microsoft+Office/Microsoft+Office+Tools/Microsoft+Office+Diagnostics.lnk&quot;</execute></action>
+        </item>
+        <item label='Microsoft Office Picture Manager' icon='/home/mdragusu/.cxoffice/Microsoft Word 2007/windata/cxmenu/icons/hicolor/32x32/apps/285E_oisicon.0.png'>
+          <action name='Execute'><execute>&quot;/home/mdragusu/.cxoffice/Microsoft Word 2007/desktopdata/cxmenu/StartMenu.C^5E3A^5Fusers^5Fcrossover^5FStart^2BMenu/Programs/Microsoft+Office/Microsoft+Office+Tools/Microsoft+Office+Picture+Manager.lnk&quot;</execute></action>
+        </item>
+      </menu>
+      <item label='Microsoft Office Word 2007' icon='/home/mdragusu/.cxoffice/Microsoft Word 2007/windata/cxmenu/icons/hicolor/32x32/apps/FD9C_wordicon.0.png'>
+        <action name='Execute'><execute>&quot;/home/mdragusu/.cxoffice/Microsoft Word 2007/desktopdata/cxmenu/StartMenu.C^5E3A^5Fusers^5Fcrossover^5FStart^2BMenu/Programs/Microsoft+Office/Microsoft+Office+Word+2007.lnk&quot;</execute></action>
+      </item>
+    </menu>
+  </menu>
+</menu>
+
+</openbox_menu>

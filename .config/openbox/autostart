@@ -1,5 +1,5 @@
-feh --bg-fill ~/Pictures/b.jpg &
-#xrandr --output VGA-0 --left-of DP-0 &
-xfce4-panel &
-#conky &
-#conky -c ~./conkyrc1 &
+bash .fehbg &
+xrandr --output VGA-0 --left-of DP-0 &
+tint2 &
+tint2 -c ~/OBS/tint2rc1 &
+conky &
