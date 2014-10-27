@@ -22,7 +22,7 @@ background_color = #FFFFFF 10
 border_color = #FFFFFF 48
 
 # Panel
-panel_items = TS
+panel_items = LTSC
 panel_monitor = 2
 panel_position = bottom center horizontal
 panel_size = 98% 22
@@ -120,4 +120,9 @@ battery_font_color = #FFFFFF 74
 battery_padding = 1 0
 battery_background_id = 0
 
-# End of config
+#------------------------------------------ #LAUNCHER #------------------------------------------ 
+launcher_icon_theme = Awoken
+launcher_padding = 2 2 
+launcher_background_id = 1 
+launcher_icon_size = 20 
+launcher_item_app = /usr/share/applications/menu.desktop
