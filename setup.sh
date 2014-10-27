@@ -10,6 +10,7 @@ tint2 \
 xfce4-terminal \
 xfce4-indicator-plugin \
 xfce4-whiskermenu-plugin \
+xfce4-notifyd \
 gtk2-engines-pixbuf \
 pavucontrol \
 gmrun \
