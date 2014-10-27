@@ -86,10 +86,10 @@ systray_icon_size = 16
 systray_icon_asb = 90 0 0
 
 # Clock
-time1_format = %H:%M
-time1_font = Terminus 6
-time2_format = %A %d %B
-time2_font = Terminus 6
+time1_format = %H:%M:%S
+time1_font = Terminus 9
+#time2_format = %A %d %B
+#time2_font = Terminus 6
 clock_font_color = #FFFFFF 74
 clock_padding = 1 0
 clock_background_id = 0
