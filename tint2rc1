@@ -25,8 +25,8 @@ border_color = #ecedee 0
 #---------------------------------------------
 panel_items = 
 panel_monitor = 2
-panel_position = top center
-panel_size = 1% 17
+panel_position = top right
+panel_size = 1 17
 panel_margin = 0 0
 panel_padding = 7 0
 font_shadow = 0
