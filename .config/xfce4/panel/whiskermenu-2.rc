@@ -1,7 +1,7 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
 recent=exo-file-manager.desktop,cxmenu-cxoffice-c742de2d-4c9b-409c-a5d4-b010a1da0070-1qv24ea-Microsoft+Office+Excel+2007.desktop,software-properties-drivers.desktop,exo-terminal-emulator.desktop,pavucontrol.desktop,exo-web-browser.desktop,qtconfig-qt4.desktop,htop.desktop,xfce4-settings-editor.desktop,xfce-ui-settings.desktop
 button-title=Applications Menu
-button-icon=/home/mdragusu/Pictures/crap/0fe10849.png
+button-icon=~/.config/tint2/icon.png
 show-button-title=false
 show-button-icon=true
 launcher-show-name=true
