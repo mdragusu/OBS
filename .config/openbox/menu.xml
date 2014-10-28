@@ -30,17 +30,13 @@
     <action name="Restart" />
   </item>
   <separator />
-  <item label="Exit">
-    <action name="Exit" />
-  </item>
-
 <item label="Reboot">
     <action name="Execute">
         <prompt>
             Are you sure you want to reboot?
         </prompt>
         <execute>
-            sudo shutdown -r now
+            dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Reboot" boolean:true
         </execute>
     </action>
 </item>
@@ -51,7 +47,7 @@
             Are you sure you want to shutdown?
         </prompt>
         <execute>
-            sudo shutdown -h now
+            dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.PowerOff" boolean:true
         </execute>
     </action>
 </item>
